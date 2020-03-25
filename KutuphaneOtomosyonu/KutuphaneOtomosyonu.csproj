@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D60DA85A-9168-4595-B63C-A8776F2A4544}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneOtomosyonu</RootNamespace>
+    <AssemblyName>KutuphaneOtomosyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ana_Sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ana_Sayfa.Designer.cs">
+      <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anlikgazete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anlikgazete.Designer.cs">
+      <DependentUpon>anlikgazete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arsiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arsiv.Designer.cs">
+      <DependentUpon>arsiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GazeteArsiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GazeteArsiv.Designer.cs">
+      <DependentUpon>GazeteArsiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gazetedergirapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gazetedergirapor.Designer.cs">
+      <DependentUpon>gazetedergirapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GazeteGuncellemeVeSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GazeteGuncellemeVeSilme.Designer.cs">
+      <DependentUpon>GazeteGuncellemeVeSilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapArsivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapArsivi.Designer.cs">
+      <DependentUpon>KitapArsivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaprapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaprapor.Designer.cs">
+      <DependentUpon>kitaprapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapSilmeVeDuzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapSilmeVeDuzenleme.Designer.cs">
+      <DependentUpon>KitapSilmeVeDuzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneOtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OkuyucuArsivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OkuyucuArsivi.Designer.cs">
+      <DependentUpon>OkuyucuArsivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OzelIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OzelIslemler.Designer.cs">
+      <DependentUpon>OzelIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelArsiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelArsiv.Designer.cs">
+      <DependentUpon>PersonelArsiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDuzenlemeVeSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelDuzenlemeVeSilme.Designer.cs">
+      <DependentUpon>PersonelDuzenlemeVeSilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="okuyucurapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="okuyucurapor.Designer.cs">
+      <DependentUpon>okuyucurapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anlikokuyucurapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anlikokuyucurapor.Designer.cs">
+      <DependentUpon>anlikokuyucurapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelrapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelrapor.Designer.cs">
+      <DependentUpon>personelrapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Uye_Duzenleme_Ve_Silme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye_Duzenleme_Ve_Silme.Designer.cs">
+      <DependentUpon>Uye_Duzenleme_Ve_Silme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniGazete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniGazete.Designer.cs">
+      <DependentUpon>YeniGazete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniPersonel.Designer.cs">
+      <DependentUpon>YeniPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeni_Kitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeni_Kitap.Designer.cs">
+      <DependentUpon>Yeni_Kitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeni_Okuyucu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeni_Okuyucu.Designer.cs">
+      <DependentUpon>Yeni_Okuyucu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici_Giris.Designer.cs">
+      <DependentUpon>Yonetici_Giris.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ana_Sayfa.resx">
+      <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anlikgazete.resx">
+      <DependentUpon>anlikgazete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arsiv.resx">
+      <DependentUpon>arsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GazeteArsiv.resx">
+      <DependentUpon>GazeteArsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gazetedergirapor.resx">
+      <DependentUpon>gazetedergirapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GazeteGuncellemeVeSilme.resx">
+      <DependentUpon>GazeteGuncellemeVeSilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapArsivi.resx">
+      <DependentUpon>KitapArsivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaprapor.resx">
+      <DependentUpon>kitaprapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapSilmeVeDuzenleme.resx">
+      <DependentUpon>KitapSilmeVeDuzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OkuyucuArsivi.resx">
+      <DependentUpon>OkuyucuArsivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OzelIslemler.resx">
+      <DependentUpon>OzelIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelArsiv.resx">
+      <DependentUpon>PersonelArsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelDuzenlemeVeSilme.resx">
+      <DependentUpon>PersonelDuzenlemeVeSilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="okuyucurapor.resx">
+      <DependentUpon>okuyucurapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anlikokuyucurapor.resx">
+      <DependentUpon>anlikokuyucurapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelrapor.resx">
+      <DependentUpon>personelrapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Uye_Duzenleme_Ve_Silme.resx">
+      <DependentUpon>Uye_Duzenleme_Ve_Silme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniGazete.resx">
+      <DependentUpon>YeniGazete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniPersonel.resx">
+      <DependentUpon>YeniPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeni_Kitap.resx">
+      <DependentUpon>Yeni_Kitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeni_Okuyucu.resx">
+      <DependentUpon>Yeni_Okuyucu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici_Giris.resx">
+      <DependentUpon>Yonetici_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KutuphaneOtomasyonuDataSet.xsc">
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneOtomasyonuDataSet.xss">
+      <DependentUpon>KutuphaneOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
